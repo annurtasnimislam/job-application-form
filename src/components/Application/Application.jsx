@@ -22,7 +22,6 @@ export default function Application() {
     description: "",
   });
 
-  console.log(info);
   return (
     <div className={classes.wrapper}>
       <Header />
