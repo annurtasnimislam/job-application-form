@@ -9,22 +9,44 @@ export default function Work(props) {
   const handleSubmit = async (e) => {
     e.preventDefault();
     props.setActive(3);
+    alert(JSON.stringify(props.info));
+    window.location.reload();
   };
 
   return (
     <div>
       <form onSubmit={(e) => handleSubmit(e)}>
         <InputField label="Company name">
-          <input type="text" name="company" onChange={handleOnchange} />
+          <input
+            type="text"
+            name="company"
+            value={props.info?.company}
+            onChange={handleOnchange}
+          />
         </InputField>
         <InputField label="Position Held">
-          <input type="text" name="position" onChange={handleOnchange} />
+          <input
+            type="text"
+            name="position"
+            value={props.info?.position}
+            onChange={handleOnchange}
+          />
         </InputField>
         <InputField label="Employment Duration">
-          <input type="text" name="duration" onChange={handleOnchange} />
+          <input
+            type="text"
+            name="duration"
+            value={props.info?.duration}
+            onChange={handleOnchange}
+          />
         </InputField>
         <InputField label="Description">
-          <input type="text" name="description" onChange={handleOnchange} />
+          <input
+            type="text"
+            name="description"
+            value={props.info?.description}
+            onChange={handleOnchange}
+          />
         </InputField>
         <div className={classes.btnHolder}>
           <p onClick={() => props.setActive(2)}>Previous</p>

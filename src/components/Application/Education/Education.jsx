@@ -15,16 +15,36 @@ export default function Education(props) {
     <div>
       <form onSubmit={(e) => handleSubmit(e)}>
         <InputField label="Highest Degree">
-          <input type="text" name="degree" onChange={handleOnchange} />
+          <input
+            type="text"
+            name="degree"
+            value={props.info?.degree}
+            onChange={handleOnchange}
+          />
         </InputField>
         <InputField label="Field of Study">
-          <input type="text" name="study" onChange={handleOnchange} />
+          <input
+            type="text"
+            name="study"
+            value={props.info?.study}
+            onChange={handleOnchange}
+          />
         </InputField>
         <InputField label="Institution Name">
-          <input type="text" name="institute" onChange={handleOnchange} />
+          <input
+            type="text"
+            name="institute"
+            value={props.info?.institute}
+            onChange={handleOnchange}
+          />
         </InputField>
         <InputField label="Graduation Year">
-          <input type="text" name="graduation_year" onChange={handleOnchange} />
+          <input
+            type="number"
+            name="graduation_year"
+            value={props.info?.graduation_year}
+            onChange={handleOnchange}
+          />
         </InputField>
         <div className={classes.btnHolder}>
           <p onClick={() => props.setActive(1)}>Previous</p>
