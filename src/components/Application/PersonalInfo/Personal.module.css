@@ -1,0 +1,12 @@
+.btnHolder {
+  display: flex;
+  gap: 20px;
+  justify-content: flex-end;
+  align-items: center;
+  cursor: pointer;
+}
+
+.btnHolder > p {
+  font-size: 14px;
+  color: var(--gray);
+}

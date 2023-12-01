@@ -1,0 +1,14 @@
+.wrapper {
+  margin: 20px auto;
+}
+.wrapper > input {
+  width: 100%;
+  padding: 8px;
+  border: none;
+  border-radius: 6px;
+  background-color: var(--gray2);
+  outline: none;
+}
+.star {
+  color: var(--red);
+}

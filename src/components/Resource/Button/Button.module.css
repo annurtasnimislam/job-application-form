@@ -1,0 +1,13 @@
+.btnSubmit > button {
+  cursor: pointer;
+  border: none;
+  border-radius: 4px;
+  padding: 10px 18px;
+  background: var(--primary);
+  color: var(--white);
+  font-size: 14px;
+}
+.btnSubmit > button:hover {
+  opacity: 0.9;
+  transition: 200ms;
+}

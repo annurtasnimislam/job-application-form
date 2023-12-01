@@ -1,0 +1,10 @@
+.header {
+  text-align: center;
+}
+.header > p:first-child {
+  font-size: 2em;
+  margin-bottom: 14px;
+}
+.header > p:nth-child(2) {
+  color: var(--gray);
+}

@@ -1,0 +1,51 @@
+.container {
+  margin: 2em 0;
+}
+.switch {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.switch > p {
+  width: 2.5em;
+  height: 2.5em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  font-weight: 500;
+}
+.activeNum {
+  background-color: var(--primary);
+  color: var(--white);
+}
+.pendingNum {
+  border: 1px solid var(--primary);
+  color: var(--dark);
+}
+.num {
+  background-color: var(--light-gray);
+  color: var(--white);
+}
+.switch > div {
+  width: 7em;
+  height: 3px;
+}
+.active {
+  background-color: var(--primary);
+}
+.inActive {
+  background-color: var(--light-gray);
+}
+.about {
+  display: flex;
+  gap: 3em;
+  justify-content: center;
+  margin: 10px;
+}
+.about > p {
+  width: 18%;
+  font-size: 14px;
+  color: var(--gray);
+  text-align: center;
+}
